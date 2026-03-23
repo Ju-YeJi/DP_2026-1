@@ -13,7 +13,7 @@ public class BookShelfIterator implements Iterator<Book> {
     }
 
     @Override
-    public boolean hasNext() { // 다음에 읽을 책이 있는지 확인하는 메소드   
+    public boolean hasNext() { // 책꽂이에서 꺼내올 다음 읽을 책이 있는지 확인하는 메소드   
         if (index < bookShelf.getLength()) {
             return true;
         } else {

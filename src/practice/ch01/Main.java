@@ -1,9 +1,12 @@
 package practice.ch01;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
+import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
+        // 학번
+        System.out.println("학번: 20211233 이름: 주예지");
+        
         // 책 테스트
         Book book = new Book("Java Programming");
         System.out.println("Book name: " + book.getName());
@@ -21,9 +24,9 @@ public class Main {
             System.out.println("Book" + (i+1) + " : " + bookShelf.getBookAt(i).getName());
         }
         
-        // 방법2: Iterator를 사용하는 방법
+        //방법2: Iterator를 사용하는 방법
         // iterator를  얻어옴
-        Iterator<Book> iterator = bookShelf.iterator();
+        Iterator<Book> it = bookShelf.iterator();
         while (it.hasNext()) {
             System.out.println("Book : " + it.next().getName());
         }
